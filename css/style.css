@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'UTMAvoBold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('UTMAvoBold'), url('../fonts/utm-avobold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'UTMAvo';
+    font-style: normal;
+    font-weight: normal;
+    src: local('UTMAvo'), url('../fonts/utm-avo.woff') format('woff');
+}
+
+.image {
+    width: 1700px;
+    height: 1200px;
+    background-image: url("../images/bg.jpg");
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+}
+
+.name {
+    font-family: UTMAvoBold;
+    height: 180px;
+    width: 950px;
+    position: absolute;
+    right: 70px;
+    top: 42%;
+    line-height: 180px;
+    color: #643186;
+    text-align: center;
+    font-size: 65px;
+    text-transform: uppercase;
+}
+
+.year {
+    padding-top: 25px;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    bottom: 80px;
+    left: 425px;
+    z-index: 1000!important;
+}
+
+.number {
+    font-family: Impact, serif;
+    height: 100%;
+    position: absolute;
+    color: #643186;
+    line-height: 335px;
+    font-size: 180px;
+    width: 300px;
+    font-weight: bolder;
+    letter-spacing: -5px !important;
+    text-align: center;
+}
+
+.year-text {
+    padding-right: 15px;
+    font-family: UTMAvoBold, serif;
+    position: absolute;
+    color: #643186;
+    font-size: 70px;
+    width: 100%;
+    text-align: right;
+}
+
+.footer {
+    padding-top: 15px;
+    position: absolute;
+    width: 900px;
+    height: 450px;
+    bottom: 50px;
+    right: 80px;
+}
+
+
+.position, .at, .branch, .join {
+    line-height: 70px;
+    text-align: center;
+}
+
+.position, .branch {
+    font-family: UTMAvoBold, serif;
+    font-size: 40px;
+    font-weight: bolder;
+    color: #643186;
+}
+
+
+.at,.join {
+    font-family: UTMAvo,serif;
+    color: rgb(100, 49, 134);
+    font-size: 35px;
+}
+
+.option {
+    padding: 20px;
+    position: fixed;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 400px;
+    overflow: hidden;
+}
+
+img {
+    position: absolute;
+    width: 550px;
+    height: 550px;
+    background: red;
+    z-index: 999;
+    left: 85px;
+    top: 290px;
+}
