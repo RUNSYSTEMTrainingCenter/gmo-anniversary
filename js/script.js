@@ -1,4 +1,4 @@
-angular.module("App", []).controller('Image', function ($scope) {
+angular.module("App", []).controller('Image', function ($scope, $timeout) {
 
     $scope.name = "Nguyễn Văn A";
     $scope.year = 5;
@@ -8,7 +8,6 @@ angular.module("App", []).controller('Image', function ($scope) {
     $scope.getYear = function (y) {
       var d = new Date();
       $scope.year = d.getFullYear() - parseInt(y.split("/")[2]);
-      console.log(d);
     };
 
     $scope.nth = function(d) {
@@ -36,7 +35,7 @@ angular.module("App", []).controller('Image', function ($scope) {
             var reader = new FileReader();
 
             reader.onload = function(e) {
-                $('img').attr('src', e.target.result);
+                $('.image img').attr('src', e.target.result);
             };
 
             reader.readAsDataURL(input.files[0]);
@@ -46,4 +45,13 @@ angular.module("App", []).controller('Image', function ($scope) {
     $("#file").change(function() {
         readURL(this);
     });
+
+    function init() {
+        $timeout(function(){
+            $('body').addClass('loaded');
+            $('h1').css('color','#222222')
+        }, 2000);
+    }
+
+    init();
 });
