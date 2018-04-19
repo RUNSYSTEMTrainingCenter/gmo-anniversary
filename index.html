@@ -29,6 +29,9 @@
             <li>
                 <a href="mailto:ohmygodvt95@gmail.com">Develop by LengKeng with <3</a>
             </li>
+            <li>
+                <a href="mailto:ohmygodvt95@gmail.com"><i class="fa fa-github fa-fw"></i></a>
+            </li>
         </ul>
     </div>
 </nav>
@@ -38,41 +41,46 @@
     <div class="option">
         <div class="">
             <div class="">
-                <h3 class="text-center">Information</h3>
+                <h3 class="text-center">User Information</h3>
                 <form action="" ng-submit="submit($event)" method="POST" enctype="multipart/form-data">
 
                     <div class="col-sm-12">
                         <div class="col-sm-12">
+                            <i class="fa fa-user fa-fw"></i> Họ và tên
                             <input type="text" ng-model="name" placeholder="Name" class="form-control" required>
                         </div>
                         <br>
                         <div class="col-sm-12">
                             <br>
-                            <input type="text" ng-model="join_date" placeholder="Join date" class="form-control" required ng-change="getYear(join_date)">
+                            <i class="fa fa-database fa-fw"></i> Ngày vào
+                            <input type="text" ng-model="join_date" placeholder="Join date dd/mm/yyyy" class="form-control" required ng-change="getYear(join_date)">
                         </div>
                         <br>
                         <div class="col-sm-12">
                             <br>
+                            <i class="fa fa-address-card fa-fw"></i> Vị trí
                             <input type="text" ng-model="position" placeholder="Position" class="form-control" required>
                         </div>
                         <br>
                         <div class="col-sm-12">
                             <br>
+                            <i class="fa fa-home fa-fw"></i> Chi nhánh
                             <input type="text" ng-model="branch" placeholder="Branch" class="form-control">
                         </div>
                         <br>
                         <div class="col-sm-12">
                             <br>
+                            <i class="fa fa-code fa-fw"></i> Số năm (automatic)
                             <input type="number" ng-model="year" placeholder="Years" min="0" class="form-control">
                         </div>
-                        <div class="col-sm-12">
+                        <div class="col-sm-12" style="overflow: hidden">
                             <br>
-                            avatar <br>
+                            <i class="fa fa-image fa-fw"></i> Avatar <br>
                             <input type="file" ng-model="image" placeholder="Image" required id="file">
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-sm-12">
                             <hr>
-                            <button class="btn btn-success">Export</button>
+                            <button class="btn btn-success btn-block btn-lg">Export</button>
                         </div>
                     </div>
                 </form>
